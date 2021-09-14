@@ -8,7 +8,7 @@
     </head>
     <body class="my-3 text-center" style="font: 0.8em 'Trebuchet MS', helvetica, sans-serif ;background: #dea ;height:1860px;">
         
-          <div class="container mx-auto w-3/5 text-left border-2 border-lime-500 bg-white">   
+          <div class="container mx-auto w-3/5 text-left bg-white" style="height:1860px;">   
  
     <div  class="md:flex md:flex-row">
         <div>
@@ -40,7 +40,7 @@
     </div>
     
     
-    <div class="pr-4 pl-8" style="background: url(../images/bg_page.png) no-repeat 0px 30px ;">
+    <div class="pr-4 pl-8" style="background: url(../images/bg_page.png) no-repeat 0px 30px;height:1505px;">
      <h1 class="text-center text-2xl text-green-700 pt-2">Bienvenue sur Wondernature</h1>
 
    <div class="flex flex-row my-5  border-b-2 border-green-700 ml-8 space-x-1">   
@@ -289,17 +289,15 @@
       </div>
 
     </div>
-    </div>
-
-
- <footer class="bg-green-700 flex flex-col md:flex-row
+	 <footer class="bg-green-700 flex flex-col md:flex-row
       md:justify-between text-center pt-1 pb-1 px-2 text-sm">
       <div class="">
-        <a href="#"  class="mx-1 hover:text-green-500 hover:underline">Apropos</a>
+        <a href="/about-us"  class="mx-1 hover:text-green-500 hover:underline">Apropos</a>
         |<a href="#"  class="mx-1 hover:text-green-500 hover:underline">Mentions légales</a>
         |<a href="#"  class="mx-1 hover:text-green-500 hover:underline">Conditions d'utilisation</a>
         </div>
         <p>wondernature {{ date('Y') }} &copy; Copyright &middot; Tous droits réservés</p>
         </footer>
+    </div>
     </body>
 </html>
