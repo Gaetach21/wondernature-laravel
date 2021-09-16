@@ -21,8 +21,8 @@
         </a>
         <h2 class="text-3xl text-lime-400 text-center font-bold">Les merveilles de la nature</h2>
         <div class="flex flex-col m-4">
-        <a href="#" class="text-center text-xl text-green-700 pt-2 hover:underline hover:text-lime-200">Connexion</a>
-        <a href="#" class="text-center text-xl text-green-700 pt-2 hover:underline hover:text-lime-200">Inscription</a>
+        <a href="#" class="text-center text-xl text-green-700 pt-2 hover:underline hover:text-lime-400 focus:text-lime-400">Connexion</a>
+        <a href="#" class="text-center text-xl text-green-700 pt-2 hover:underline hover:text-lime-400 focus:text-lime-400">Inscription</a>
         </div>
         </div>
     </div>
@@ -30,10 +30,10 @@
 
     <div class=" bg-lime-400 flex flex-col md:flex-row md:justify-between text-xl text-white">
       <div class="">
-        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white">Accueil</a>
-        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white">Fleurs</a>
-        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white">Pantes</a>
-        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white">Arbres</a>
+        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Accueil</a>
+        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Fleurs</a>
+        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Pantes</a>
+        <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Arbres</a>
         <a href="#"  class="px-12 hover:text-green-700 hover:underline">Animaux</a>
         
         </div>
@@ -292,9 +292,9 @@
 	 <footer class="bg-green-700 flex flex-col md:flex-row
       md:justify-between text-center pt-1 pb-1 px-2 text-sm">
       <div class="">
-        <a href="/about-us"  class="mx-1 hover:text-green-500 hover:underline">Apropos</a>
-        |<a href="#"  class="mx-1 hover:text-green-500 hover:underline">Mentions légales</a>
-        |<a href="#"  class="mx-1 hover:text-green-500 hover:underline">Conditions d'utilisation</a>
+        <a href="/about-us"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Apropos</a>
+        |<a href="#"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Mentions légales</a>
+        |<a href="#"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Conditions d'utilisation</a>
         </div>
         <p>wondernature {{ date('Y') }} &copy; Copyright &middot; Tous droits réservés</p>
         </footer>
