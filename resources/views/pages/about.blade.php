@@ -1,4 +1,5 @@
 @extends('app')
+@section('title','Apropos | Wondernature')
 @section('content')
      <h1 class="text-center text-2xl text-green-700 pt-2">A propos de Wondernature</h1>
 
