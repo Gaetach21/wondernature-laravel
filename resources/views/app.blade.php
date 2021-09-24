@@ -30,7 +30,7 @@
 
     <div class=" bg-lime-400 flex flex-col md:flex-row md:justify-between text-xl text-white">
       <div class="">
-        <a href="/"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Accueil</a>
+        <a href="{{ route('home') }}"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Accueil</a>
         <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Fleurs</a>
         <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Pantes</a>
         <a href="#"  class="px-11 hover:text-green-700 hover:underline border-r-2 border-white focus:text-green-700">Arbres</a>
@@ -45,7 +45,7 @@
 	 <footer class="bg-green-700 flex flex-col md:flex-row
       md:justify-between text-center pt-1 pb-1 px-2 text-sm">
       <div class="">
-        <a href="/about-us"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Apropos</a>
+        <a href="{{ route('about') }}"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Apropos</a>
         |<a href="#"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Mentions légales</a>
         |<a href="#"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Conditions d'utilisation</a>
         </div>
