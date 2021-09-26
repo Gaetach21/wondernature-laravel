@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title',config('app.name').' - Les merveilles de la nature')
 @section('content')
      <h1 class="text-center text-2xl text-green-700 pt-2">Bienvenue sur Wondernature</h1>
 

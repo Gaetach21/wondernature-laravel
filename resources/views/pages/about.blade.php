@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('title','A propos | '.config('app.name'))
+@extends('layouts.app',['title'=>'Apropos'])
 @section('content')
      <h1 class="text-center text-2xl text-green-700 pt-2">A propos de Wondernature</h1>
 
