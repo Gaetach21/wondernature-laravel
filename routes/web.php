@@ -21,6 +21,10 @@ Route::get('/about-us', function () {
     return view('pages/about');
 })->name('about');
 
+Route::get('/flower', function () {
+    return view('pages/flower');
+})->name('flower');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
