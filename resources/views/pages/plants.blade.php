@@ -1,78 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.app',['title'=>'Liste des plantes'])
 @section('content')
-     <h1 class="text-center text-2xl text-green-700 pt-2">Bienvenue sur Wondernature</h1>
+     <h1 class="text-center text-2xl text-green-700 pt-2 ">Liste des plantes</h1>
 
-   <div class="flex flex-row my-5  border-b-2 border-green-700 ml-8 space-x-1">   
-<img src="{{ asset('images/little-orchidee.jpg') }}"/> 
-<h2 class="ml-8 text-xl text-green-700 font-bold">
-<a href="{{ route('flower') }}">Liste des fleurs</a></h2>
-</div>
         <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
             
             <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/camelia-rouge.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
-                </a>
-                        <div class="p-1">
-            <h3><a href="#">camelia rouge</a></h3>
-            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
-            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
-            </a>    
-        </div>
-      </div>
-
-
-      <div class="shadow-lg rounded-lg text-center">
-                <a href="#">
-                    <img src="{{ asset('images/chrysantheme-carene.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
-                </a>
-                        <div class="p-1">
-            <h3><a href="#">chrysantheme carene</a></h3>
-            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
-            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
-            </a>    
-        </div>
-      </div>
-
-
-      <div class="shadow-lg rounded-lg text-center">
-                <a href="#">
-                    <img src="{{ asset('images/jasmin-bresil.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
-                </a>
-                        <div class="p-1">
-            <h3><a href="#">jasmin du bresil</a></h3>
-            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
-            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
-            </a>    
-        </div>
-      </div>
-
-
-      <div class="shadow-lg rounded-lg text-center">
-                <a href="#">
-                    <img src="{{ asset('images/flamboyant.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
-                </a>
-                        <div class="p-1">
-            <h3><a href="#">flamboyant</a></h3>
-            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
-            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
-            </a>    
-        </div>
-      </div>
-      </div>
-
-
-
-      <div class="flex flex-row my-5  border-b-2 border-green-700 ml-8 space-x-1">   
-<img src="{{ asset('images/little-orchidee.jpg') }}"/> 
-<h2 class="ml-8 text-xl text-green-700 font-bold">
-<a href="{{ route('plants') }}">Liste des plantes</a></h2>
-</div>
-        <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
-            
-            <div class="shadow-lg rounded-lg text-center">
-                <a href="#">
-                    <img src="{{ asset('images/bananier-fruitier.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/bananier-fruitier.jpg') }}" alt="bananier fruitier" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
             <h3><a href="#">bananier fruitier</a></h3>
@@ -85,7 +19,7 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/carotte.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/carotte.jpg') }}" alt="carotte" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
             <h3><a href="#">carotte</a></h3>
@@ -98,7 +32,7 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/epinard.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/epinard.jpg') }}" alt="epinard" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
             <h3><a href="#">epinard</a></h3>
@@ -111,7 +45,7 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/fenouil.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/fenouil.jpg') }}" alt="fenouil" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
             <h3><a href="#">fenouil</a></h3>
@@ -122,22 +56,14 @@
       </div>
       </div>
 
-
-
-
-      <div class="flex flex-row my-5  border-b-2 border-green-700 ml-8 space-x-1">   
-<img src="{{ asset('images/little-orchidee.jpg') }}"/> 
-<h2 class="ml-8 text-xl text-green-700 font-bold">
-<a href="#">Liste des arbres</a></h2>
-</div>
-        <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
+           <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
             
             <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/cacaoyer-cacao.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/griffe-sorciere.jpg') }}" alt="griffe sorciere" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">cacaoyer</a></h3>
+            <h3><a href="#">griffe sorciere</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
@@ -147,10 +73,10 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/cerisier-cerise.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/helianthemum.jpg') }}" alt="helianthème" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">cerisier</a></h3>
+            <h3><a href="#">helianthème</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
@@ -160,10 +86,10 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/citronnier-citron.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/iberis.jpg') }}" alt="iberis" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">citronnier</a></h3>
+            <h3><a href="#">iberis</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
@@ -173,34 +99,27 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/figuier.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/laitue.jpg') }}" alt="laitue" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">figuier</a></h3>
+            <h3><a href="#">laitue</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
         </div>
       </div>
       </div>
-
-
-
-
-
-      <div class="flex flex-row my-5  border-b-2 border-green-700 ml-8 space-x-1">   
-<img src="{{ asset('images/little-orchidee.jpg') }}"/> 
-<h2 class="ml-8 text-xl text-green-700 font-bold">
-<a href="#">Liste des animaux</a></h2>
-</div>
-        <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
+	  
+	  
+	  
+	          <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8 ">
             
             <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/anaconda-vert.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/mache-grosse-graine.jpg') }}" alt="mache" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">anaconda vert</a></h3>
+            <h3><a href="#">mache</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
@@ -210,10 +129,10 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/autruche.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/menthe.jpg') }}" alt="menthe" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">autruche</a></h3>
+            <h3><a href="#">menthe</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
@@ -223,10 +142,10 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/ane-de-provence.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/ortie-feuilles.jpg') }}" alt="ortie" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">ane de provence</a></h3>
+            <h3><a href="#">ortie</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
             flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
@@ -236,14 +155,126 @@
 
       <div class="shadow-lg rounded-lg text-center">
                 <a href="#">
-                    <img src="{{ asset('images/aigle-royal.jpg') }}" class="rounded-tl-lg rounded-tr-lg" />
+                    <img src="{{ asset('images/persil.jpg') }}" alt="persil" class="rounded-tl-lg rounded-tr-lg" />
                 </a>
                         <div class="p-1">
-            <h3><a href="#">aigle royal</a></h3>
+            <h3><a href="#">persil</a></h3>
             <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
-            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm mb-4">Lire la suite
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
             </a>    
         </div>
       </div>
       </div>
-    @endsection
+	  
+	  
+	          <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
+            
+            <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/poireau.jpg') }}" alt="poireau" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">poireau</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+
+
+      <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/prele.jpg') }}" alt="prele" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">prele</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+
+
+      <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/tilleul-barronies.jpg') }}" alt="tilleul" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">tilleul</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+
+
+      <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/vigne-raisin.jpg') }}" alt="vigne" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">vigne</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+      </div>
+	  
+	  
+		          <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ml-8">
+            
+            <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/poireau.jpg') }}" alt="poireau" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">poireau</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+
+
+      <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/prele.jpg') }}" alt="prele" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">prele</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+
+
+      <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/tilleul-barronies.jpg') }}" alt="tilleul" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">tilleul</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+
+
+      <div class="shadow-lg rounded-lg text-center">
+                <a href="#">
+                    <img src="{{ asset('images/vigne-raisin.jpg') }}" alt="vigne" class="rounded-tl-lg rounded-tr-lg" />
+                </a>
+                        <div class="p-1">
+            <h3><a href="#">vigne</a></h3>
+            <a href="#"  class="bg-lime-400 rounded-full py-2 px-4 text-white 
+            flex flex-row justify-center my-2 hover:from-lime-800 hover:to-lime-800 text-sm">Lire la suite
+            </a>    
+        </div>
+      </div>
+      </div>
+	  
+    
+@endsection
