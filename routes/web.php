@@ -29,6 +29,10 @@ Route::get('/plants', function () {
     return view('pages/plants');
 })->name('plants');
 
+Route::get('/trees', function () {
+    return view('pages/trees');
+})->name('trees');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
