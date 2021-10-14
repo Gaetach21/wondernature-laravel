@@ -33,6 +33,10 @@ Route::get('/trees', function () {
     return view('pages/trees');
 })->name('trees');
 
+Route::get('/animals', function () {
+    return view('pages/animals');
+})->name('animals');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
