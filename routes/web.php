@@ -37,6 +37,10 @@ Route::get('/animals', function () {
     return view('pages/animals');
 })->name('animals');
 
+Route::get('/mentions', function () {
+    return view('pages/mentions');
+})->name('mentions');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
