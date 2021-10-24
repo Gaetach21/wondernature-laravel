@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('pages/home');
 })->name('home');
 
+
 Route::get('/about-us', function () {
     return view('pages/about');
 })->name('about');
@@ -40,6 +41,10 @@ Route::get('/animals', function () {
 Route::get('/mentions', function () {
     return view('pages/mentions');
 })->name('mentions');
+
+Route::get('/contact', function () {
+    return view('pages/contact');
+})->name('contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

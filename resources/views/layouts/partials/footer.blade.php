@@ -3,7 +3,7 @@
       <div class="">
         <a href="{{ route('about') }}"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Apropos</a>
         |<a href="{{ route('mentions') }}"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Mentions légales</a>
-        |<a href="#"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Contact</a>
+        |<a href="{{ route('contact') }}"  class="mx-1 hover:text-green-500 hover:underline focus:text-green-500">Contact</a>
         </div>
         <p>wondernature {{ date('Y') }} &copy; Copyright &middot; Tous droits réservés</p>
         </footer>
