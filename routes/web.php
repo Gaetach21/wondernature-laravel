@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WondernatureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,39 +13,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [WondernatureController::class, 'index'])->name('home');
+Route::get('/about-us', [WondernatureController::class, 'getabout'])->name('about');
+Route::get('/flower', [WondernatureController::class, 'getflower'])->name('flower');
+Route::get('/plants', [WondernatureController::class, 'getplants'])->name('plants');
+Route::get('/trees', [WondernatureController::class, 'gettrees'])->name('trees');
+Route::get('/animals', [WondernatureController::class, 'getanimals'])->name('animals');
+Route::get('/mentions', [WondernatureController::class, 'getmentions'])->name('mentions');
+Route::get('/contact', [WondernatureController::class, 'getContact'])->name('contact.create');
+Route::post('/contact', [WondernatureController::class, 'postContact'])->name('contact.store');
 
-Route::get('/', function () {
-    return view('pages/home');
-})->name('home');
 
-
-Route::get('/about-us', function () {
-    return view('pages/about');
-})->name('about');
-
-Route::get('/flower', function () {
-    return view('pages/flower');
-})->name('flower');
-
-Route::get('/plants', function () {
-    return view('pages/plants');
-})->name('plants');
-
-Route::get('/trees', function () {
-    return view('pages/trees');
-})->name('trees');
-
-Route::get('/animals', function () {
-    return view('pages/animals');
-})->name('animals');
-
-Route::get('/mentions', function () {
-    return view('pages/mentions');
-})->name('mentions');
-
-Route::get('/contact', function () {
-    return view('pages/contact');
-})->name('contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

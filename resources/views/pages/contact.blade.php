@@ -14,14 +14,14 @@ Vous pouvez nous contacter aussi par mail à l'adresse <a href="mailto:tachgaeta
 	@endif
 	
 
-<form action="#" class="md:flex md:flex-col space-y-4"  method="post">
+<form action="{{ route('contact.store') }}" class="md:flex md:flex-col space-y-4"  method="post">
 @csrf
 <div>
 	 			<label for="" class="text-sm">
 	 			Votre nom</label>
 	 			<input type="text" placeholder="Votre nom" class="ring-1 ring-gray-300
 	 			w-full rounded-md px-4 py-2 mt-2 outline-none 
-	 			focus:ring-2 focus:ring-lime-300" />
+	 			focus:ring-2 focus:ring-lime-300" name="name" />
 	 		</div>
 
 	 		<div>
@@ -29,7 +29,7 @@ Vous pouvez nous contacter aussi par mail à l'adresse <a href="mailto:tachgaeta
 	 			Votre adresse email</label>
 	 			<input type="email" placeholder="Votre adresse email" class="ring-1 ring-gray-300
 	 			w-full rounded-md px-4 py-2 mt-2 outline-none 
-	 			focus:ring-2 focus:ring-lime-300" />
+	 			focus:ring-2 focus:ring-lime-300" name="email" />
 	 		</div>
 
 	 		<div>
@@ -37,7 +37,7 @@ Vous pouvez nous contacter aussi par mail à l'adresse <a href="mailto:tachgaeta
 	 			Votre message</label>
 	 			<textarea placeholder="Votre message" class="ring-1 ring-gray-300
 	 			w-full rounded-md px-4 py-2 mt-2 outline-none 
-	 			focus:ring-2 focus:ring-lime-300"></textarea> 
+	 			focus:ring-2 focus:ring-lime-300" name="message" ></textarea> 
 	 		</div>
 
 	 		<button class="inline-block self-end bg-green-700 text-white font-bold
